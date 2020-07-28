@@ -1,139 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
-        <meta charset="utf-8">
-        <title>Facing Mountains</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Latest compiled and minified BOOTSTRAP CSS -->
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-    <!-- Local CSS -->
-    <link rel='stylesheet' type='text/css' href='mountain_style.css'>
-    <!-- Font-awesome 4.7 cdn -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="user-scalable=0,width=device-width,initial-scale=1,maximum-scale=1" />
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Title -->
+  <title>Facing Mountains</title>
 
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
 
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/mountain_style.css" />
+  <link rel="stylesheet" type="text/css" href="assets/js/fullpage/jquery.fullPage.css" />
+
+  <!-- JavaScript -->
+  <script src="assets/js/jquery/jquery.3.4.1.min.js"></script>
+  <script src="assets/js/fullpage/jquery.fullPage.min.js"></script>
 </head>
 
 <body>
+  <!-- Site Mobile -->
+  <div id="site-navigation-mobile">
+    <div class="navMob-fixed-top">
+      <a class="js-menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <div class="mm-menu js-menu js-mobNavHeight">
+      <nav class="navMob">
+        <a class="js-menu-close">
+          <span></span>
+          <span></span>
+        </a>
+        <ul id="navMobPrimary">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#listen">LISTEN</a></li>
+          <li><a href="#watch">WATCH</a></li>
+          <li><a href="#bio">BIO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-
-    <nav>
-    <ul>
-        <li><a  href="#anchor-home">HOME</a></li>
-        <li> <a  href="#anchor-listen" >LISTEN</a></li>
-        <li><a  href="#anchor-watch">WATCH</a></li>
-        <!-- <li><a class="shop" href="#">SHOP</a></li> -->
-        <li><a  href="#anchor-bio">BIO</a></li>
+  <!-- Site Navigation -->
+  <nav id="site-navigation">
+    <ul id="menu">
+      <li>
+        <a href="#home" class="js-scrollToSection" data-link="1,0">HOME</a>
+      </li>
+      <li>
+        <a href="#listen" class="js-scrollToSection" data-link="2,0">LISTEN</a>
+      </li>
+      <li>
+        <a href="#watch" class="js-scrollToSection" data-link="3,0">WATCH</a>
+      </li>
+      <li>
+        <a href="#bio" class="js-scrollToSection" data-link="4,0">BIO</a>
+      </li>
+      <!-- <li><a class="shop" href="#">SHOP</a></li> -->
     </ul>
-</nav>
+  </nav>
 
-
-
-
-    <section id="one">
-    <div class="black">
-
-        <div class="content_home" id="anchor-home">
-            <div class="items">
-                <img class="logo" src="logo_F.M-22.svg">
-
-                <div>
-                    <div class="media">
-                        <a href="#" target="_blank"><img class="social_icons"  src="social_media-01.svg"></a>
-                        <a href="https://soundcloud.com/facingmountains" target="_blank"><img class="social_icons" src="social_media-02.svg"></a>
-                        <a href="https://facingmountains.bandcamp.com/" target="_blank"><img class="social_icons" src="social_media-03.svg"></a>
-                        <a href="https://www.youtube.com/channel/UCgwDAN56Ow7baRTt6WR7wvg?view_as=subscriber" target="_blank"><img class="social_icons" src="social_media-04.svg"></a>
-                        <a href="https://www.facebook.com/facingmountains/" targer="_blank"><img class="social_icons" src="social_media-05.svg"></a>
-                        <a href="https://www.instagram.com/facingmountainsmusic/"target="_blank"><img class="social_icons" src="social_media-06.svg"></a>
-                    </div>
-                    
-                    <img class="arrows" src="arrows_down.png">
-                </div>
-               
-            </div>
-           
+  <!-- Site Content -->
+  <div id="site-content">
+    <!-- 1.Section - Home -->
+    <section id="home" class="section section-home is-background-dark">
+      <div class="home-content">
+        <div class="home-logo-wrapper">
+          <img class="logo" src="assets/img/logo_F.M-22.svg" />
         </div>
-    </div>
-</section>
-
-<section id="two">
-    <div class="listen" id="anchor-listen" >
-       
-           
-               
-                <div class="spotfy_player"><iframe src="https://open.spotify.com/embed/album/4sgJYX3we1RoranerDs8ph" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
-                <div class="apple_player"></div>
-                
-                <img class="cover_image" src="image_face-01.png">
-               
+        <div class="home-media media-bar">
+          <a href="https://open.spotify.com/artist/6ZGeDnsdscohXidync7Gbw?si=KDvHjHjOQCqcFJaP1XQ_mA" target="_blank">
+            <img class="social-icons" src="assets/img/social_media-01.svg" />
+          </a>
+          <a href="https://soundcloud.com/facingmountains" target="_blank">
+            <img class="social-icons" src="assets/img/social_media-02.svg" />
+          </a>
+          <a href="https://facingmountains.bandcamp.com/" target="_blank">
+            <img class="social-icons" src="assets/img/social_media-03.svg" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCgwDAN56Ow7baRTt6WR7wvg?view_as=subscriber" target="_blank">
+            <img class="social-icons" src="assets/img/social_media-04.svg" />
+          </a>
+          <a href="https://www.facebook.com/facingmountains/" target="_blank">
+            <img class="social-icons" src="assets/img/social_media-05.svg" />
+          </a>
+          <a href="https://www.instagram.com/facingmountainsmusic/" target="_blank">
+            <img class="social-icons" src="assets/img/social_media-06.svg" />
+          </a>
         </div>
-       
-    </div>
-</section>
+        <a href="#listen" class="home-arrows js-scrollToSection" data-link="2,0">
+          <img src="assets/img/arrows_down.png" />
+        </a>
+      </div>
+    </section>
 
-<section id="three">
-    <div class="watch" id="anchor-watch">
-        <div class="all_videos">
-            <div class="main_video"><iframe width="1040" height="600" src="https://www.youtube.com/embed/8c399HPb01s"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <!-- <div class="side_videos">
-                <div class="videos"></div>
-                <div class="videos"></div>
-                <div class="videos"></div>
-            </div> -->
+    <!-- 2.Section - Listen -->
+    <section id="listen" class="section section-listen is-background-light">
+      <div class="listen-content">
+        <div class="listen-spotfy-player">
+          <iframe src="https://open.spotify.com/embed/album/6CRrgb2SrDAtj2mMOu1Pfb" width="300" height="380"
+            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
-    </div>
-</section>
-   
-<section id="four">
-        <div class="black">
+        <img class="listen-cover-image" src="assets/img/image_face-01.png" />
+      </div>
+      <!-- mobile only -->
+      <a class="mobile-icon" href="https://open.spotify.com/artist/6ZGeDnsdscohXidync7Gbw?si=KDvHjHjOQCqcFJaP1XQ_mA"
+        target="_blank">
+        <img src="assets/img/social_media-01__dark.svg" />
+      </a>
+    </section>
 
-                <div class="content_bio" id="anchor-bio">
-                    <div class="items_bio">
-                        <img class="logo_bio" src="logo_F.M-22.svg">
-        <div>
-            <div class="biography">
+    <!-- 3.Section - Watch -->
+    <section id="watch" class="section section-watch is-background-dark">
+      <div class="watch-content">
+        <div class="watch-all-videos">
+          <div class="watch-main-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_1qGlLU8Q6c" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- mobile only -->
+      <a class="mobile-icon" href="https://www.youtube.com/channel/UCgwDAN56Ow7baRTt6WR7wvg?view_as=subscriber"
+        target="_blank">
+        <img src="assets/img/social_media-04.svg" />
+      </a>
+    </section>
 
-<p class="bio_text">
-        The personal and heartfelt music of Facing Mountains was born out of a longing from Dutch composer and songwriter Xander Slikker. After treading on numerous musical journeys, he developed an interest for new and old music. Eventually he has found a way to combine his love for classical, alternative and electronic music, and shape it into one identity.
+    <!-- 4.Section - Bio -->
+    <section id="bio" class="section section-bio is-background-dark">
+      <div class="bio-content">
+        <div class="bio-items">
+          <div class="bio-logo">
+            <img src="assets/img/logo_F.M-22.svg" />
+          </div>
+          <div class="bio-text">
+            <p>
+              The personal and heartfelt music of Facing Mountains was born
+              out of a longing from Dutch composer and songwriter Xander
+              Slikker. After treading on numerous musical journeys, he
+              developed an interest for new and old music. Eventually he has
+              found a way to combine his love for classical, alternative and
+              electronic music, and shape it into one identity.
+            </p>
+            <p>
+              A believe in the power of melodic storytelling is what lies
+              behind and drives Facing Mountains. The fluid style evokes
+              introspective images with it's strong influence of classical
+              music and fine balance between acoustic and electronic sounds.
+              With artists such as Gotye, Radiohead and Nick Drake as an
+              inspiration, Facing Mountains creates rich and colourful
+              alternative pop music with cinematic elements.
+            </p>
+            <p>
+              In 2020, after a year of isolation and devotion to working on
+              new music, the first self-produced album 'Season's end' was
+              released. This was a first step into a longer musical journey.
+              Set to discover the expressive possibilities of story, melody
+              and melancholy.
+            </p>
+          </div>
+          <div class="bio-media media-bar">
+            <a href="https://open.spotify.com/artist/6ZGeDnsdscohXidync7Gbw?si=KDvHjHjOQCqcFJaP1XQ_mA" target="_blank">
+              <img class="social-icons" src="assets/img/social_media-01.svg" />
+            </a>
+            <a href="https://soundcloud.com/facingmountains" target="_blank">
+              <img class="social-icons" src="assets/img/social_media-02.svg" />
+            </a>
+            <a href="https://facingmountains.bandcamp.com/" target="_blank">
+              <img class="social-icons" src="assets/img/social_media-03.svg" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCgwDAN56Ow7baRTt6WR7wvg?view_as=subscriber" target="_blank">
+              <img class="social-icons" src="assets/img/social_media-04.svg" />
+            </a>
+            <a href="https://www.facebook.com/facingmountains/" target="_blank">
+              <img class="social-icons" src="assets/img/social_media-05.svg" />
+            </a>
+            <a href="https://www.instagram.com/facingmountainsmusic/" target="_blank">
+              <img class="social-icons" src="assets/img/social_media-06.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copy_right"></div>
+    </section>
+  </div>
 
-        <br><br>A believe in the power of melodic storytelling is what lies behind and drives Facing Mountains. The fluid style evokes introspective images with it's strong influence of classical music and fine balance between acoustic and electronic sounds. With artists such as Gotye, Radiohead and Nick Drake as an inspiration, Facing Mountains creates rich and colourful alternative pop music with cinematic elements.
-        
-        <br><br>In 2020, after a year of isolation and devotion to working on new music, the first self-produced album 'Season's end' was released. This was a first step into a longer musical journey. Set to discover the expressive possibilities of story, melody and melancholy.
-        
-</p>
-
-            </div>
-            <div class="media">
-                    <a href="#" target="_blank"><img class="social_icons"  src="social_media-01.svg"></a>
-                    <a href="https://soundcloud.com/facingmountains" target="_blank"><img class="social_icons" src="social_media-02.svg"></a>
-                    <a href="https://facingmountains.bandcamp.com/" target="_blank"><img class="social_icons" src="social_media-03.svg"></a>
-                    <a href="https://www.youtube.com/channel/UCgwDAN56Ow7baRTt6WR7wvg?view_as=subscriber" target="_blank"><img class="social_icons" src="social_media-04.svg"></a>
-                    <a href="https://www.facebook.com/facingmountains/" target="_blank"><img class="social_icons" src="social_media-05.svg"></a>
-                    <a href="https://www.instagram.com/facingmountainsmusic/"target="_blank"><img class="social_icons" src="social_media-06.svg"></a>
-                </div>
-                        </div>
-                       
-                    </div>
-                   
-                </div>
-            </div>
-
-    
-        </section>
-
-
+  <!-- JavaScript - invoke -->
+  <script src="assets/js/custom/custom.js"></script>
 </body>
-
 
 </html>
