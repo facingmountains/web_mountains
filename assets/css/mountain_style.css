@@ -174,7 +174,7 @@ body {
 .listen-spotfy-player iframe {
   position: absolute;
   max-width: 240px;
-  max-height: 160px;
+  max-height: 280px;
   margin: 0 auto;
 }
 
