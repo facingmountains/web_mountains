@@ -146,13 +146,13 @@ body {
 
 /* Listen */
 .listen-content {
-  padding-top: 100px;
+  padding-top: 120px;
   position: relative;
 
 }
 
 .listen-cover-image {
-  width: 53%;
+  width: 50%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -162,7 +162,7 @@ body {
 }
 
 .listen-spotfy-player {
-  width: 40.4%;
+  width: 38%;
   position: relative;
   margin: 0 auto;
   top: 240px;
@@ -173,13 +173,14 @@ body {
 
 .listen-spotfy-player iframe {
   position: absolute;
-  max-width: 240px;
+  max-width: 220px;
   max-height: 360px;
   margin: 0 auto;
 }
 
 /* Watch */
 .section-watch {
+  padding-top: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,14 +196,14 @@ body {
   border: 1px solid #f26522;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
+  max-width: 700px;
 }
 
 .watch-main-video {
   position: relative;
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 50%;
 }
 
 .watch-main-video iframe {
@@ -229,6 +230,7 @@ body {
 }
 
 .bio-logo {
+  padding-top:60px;
   width: 40%;
   display: block;
   margin-left: auto;
