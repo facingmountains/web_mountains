@@ -185,7 +185,7 @@ cursor: pointer;
 }
 
 
-#mc_embed_signup{
+#embed_signup{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,12 +201,12 @@ cursor: pointer;
 form  h3{
   text-align: center;
 }
-.mc-field-group{
+.field-group{
 padding-top:20px;
 
 }
 
-.mc-field-group input{
+.field-group input{
   padding:10px 20px;
   margin:  7px 10px;
   border: 1px solid  white;
@@ -216,11 +216,11 @@ padding-top:20px;
   color: white;
 }
 
-.mc-field-group input:focus{
+.field-group input:focus{
   outline: none;
   box-shadow: none;
 }
-.mc-field-group button{
+.field-group button{
   background-color: transparent;
 }
 
