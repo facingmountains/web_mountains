@@ -15,7 +15,7 @@
 
 nav ul,
 nav ul li {
-  list-style: none;
+  list-style: none;  
 }
 
 a {
@@ -57,22 +57,26 @@ body {
   width: 100%;
   top: 90px;
   z-index: 1000;
+  
 }
+
 
 #site-navigation li {
   display: inline;
+
 }
 
 #site-navigation li a {
   margin: 10px;
   color: #f26522;
   letter-spacing: 0.9px;
+  
 }
 
 #site-navigation a:active,
 #site-navigation a:hover,
 #site-navigation a:focus {
-  color: rgb(255, 212, 0);
+  color: rgb(223, 187, 4);
   text-decoration: none;
 }
 
@@ -81,10 +85,12 @@ body {
   outline-offset: none;
 }
 
+
 /* 4. Other */
 .section {
   width: 100%;
   height: 100vh;
+  
 }
 
 .is-background-dark {
@@ -102,8 +108,8 @@ body {
 }
 
 .social-icons {
-  width: 30px;
-  margin: 10px;
+  width: 28px;
+  margin: 14px;
 }
 
 .mobile-icon {
@@ -114,17 +120,26 @@ body {
 .section-home {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  padding-top: 100px;
+  
 }
 
+
+.follow_btn{
+height:100vh; 
+
+}
 .home-content {
   display: flex;
   flex-direction: column;
+  align-items:center; 
 }
 
 .home-logo-wrapper {
   width: 390px;
+  padding-top: 70px; 
 }
 
 .home-logo-wrapper img {
@@ -134,7 +149,7 @@ body {
 }
 
 .home-media {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .home-arrows {
@@ -144,15 +159,95 @@ body {
   margin-left: -18px;
 }
 
+
+.buy_music{
+  padding-top:40px;
+  text-align: center;
+}
+.buy_music button{
+padding:10px 20px;
+border: 1px solid #f26522;
+border-radius: 20px;
+color: white;
+background-color: #f26522;
+cursor: pointer;
+
+}
+
+.buy_music button:active,
+.buy_music button:hover,
+.buy_music button:focus{
+  border: 1px solid #fc783b;
+  background-color: #fc783b;
+  text-decoration: none;
+  outline: none;
+
+}
+
+
+#mc_embed_signup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #101010;
+  color: white;
+  width: 100%;
+  bottom:0px; 
+  position: absolute;
+  padding-top:50px; 
+  padding-bottom:100px;
+}
+
+form  h3{
+  text-align: center;
+}
+.mc-field-group{
+padding-top:20px;
+
+}
+
+.mc-field-group input{
+  padding:10px 20px;
+  margin:  7px 10px;
+  border: 1px solid  white;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 12px;
+  color: white;
+}
+
+.mc-field-group input:focus{
+  outline: none;
+  box-shadow: none;
+}
+.mc-field-group button{
+  background-color: transparent;
+}
+
+button input{
+  color:  white;
+}
+
+button input:active,
+button input:hover,
+button input:focus{
+  border: 1px solid  rgb(223, 187, 4);
+  color: rgb(223, 187, 4);
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+
 /* Listen */
 .listen-content {
-  padding-top: 100px;
+  padding-top: 120px;
   position: relative;
 
 }
 
 .listen-cover-image {
-  width: 53%;
+  width: 50%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -162,7 +257,7 @@ body {
 }
 
 .listen-spotfy-player {
-  width: 40.4%;
+  width: 38%;
   position: relative;
   margin: 0 auto;
   top: 240px;
@@ -173,13 +268,14 @@ body {
 
 .listen-spotfy-player iframe {
   position: absolute;
-  max-width: 240px;
+  max-width: 220px;
   max-height: 360px;
   margin: 0 auto;
 }
 
 /* Watch */
 .section-watch {
+  padding-top:120px ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,14 +291,14 @@ body {
   border: 1px solid #f26522;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1000px;
+  max-width: 700px;
 }
 
 .watch-main-video {
   position: relative;
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 50%;
 }
 
 .watch-main-video iframe {
@@ -215,6 +311,92 @@ body {
 }
 
 /* End watch */
+
+
+
+/*Store*/
+
+.section-store{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.store_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+
+.store_card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.link_to_store{
+text-align: center;
+margin-bottom:60px;
+}
+
+.link_to_store a{
+  text-decoration:none;
+  cursor: pointer;
+  color: #f26522;
+}
+
+.link_to_store a:hover{
+  color:rgb(223, 187, 4);
+}
+
+.one_card {
+  border: 1px solid #d1d3d4;
+  transition: 0.3s;
+  width: 18%;
+  padding:10px;
+  margin: 30px 20px; 
+  float: left;
+  
+
+}
+
+.one_card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 1px solid #f26522;
+  cursor: pointer;
+}
+.link_one_card{
+  text-decoration:none;
+  color:black ;
+}
+
+.card_text {
+  padding: 20px 16px;
+  text-align: center
+}
+
+.one_card button{
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-top: 14px;
+  background-color: #f26522;
+  color:white;
+  font-size: 12px;
+  cursor: pointer;
+}
+.one_card button:active,
+.one_card button:hover,
+.one_card button:focus{
+  background-color: #fc783b;
+  text-decoration: none;
+  outline: none;
+}
+
+/* End store */
 
 /* Bio */
 .section-bio {
@@ -260,17 +442,24 @@ body {
 /* Small Screens */
 @media (max-width: 1366px) {
   #site-navigation {
-    top: 60px;
+    top: 80px;
   }
 
   /* Section Watch */
   .watch-content {
-    max-width: 700px;
+    max-width: 900px;
   }
+
+/* Section Store */
+  .one_card{
+    width: 40%;
+    margin:20px;
+  }
+
 
   /* Section Bio */
   .bio-content {
-    padding-top: 120px;
+    padding-top: 100px;
   }
   .bio-text {
     padding-top: 40px;
@@ -288,16 +477,16 @@ body {
     min-height: 100vh;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 120px;
+    padding-top: 40px;
     position: relative;
   }
 
   .section-home {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
   }
 
   .section-watch {
-    padding-bottom: 120px;
+    padding-bottom: 100px;
   }
 
   .section-bio {
@@ -305,9 +494,17 @@ body {
   }
 
   .home-logo-wrapper {
-    width: 100%;
+    width: 80%;
   }
 
+  #mc_embed_signup{
+
+    padding-top:26px; 
+    padding-bottom:33px;
+    padding-left:5px;  
+    padding-right:5px;
+
+  }
   .home-arrows {
     display: none;
   }
@@ -317,7 +514,7 @@ body {
   }
 
   .listen-content {
-    padding-top: 0;
+    padding-top: 20;
     min-height: 100vh;
   }
 
@@ -347,12 +544,17 @@ body {
     margin: 0 auto;
   }
 
+.one_card{
+  width: 80%;
+  margin:25px;
+}
+
   .bio-content {
-    padding-top: 0;
+    padding-top: 10px;
   }
 
   .bio-logo {
-    max-width: 240px;
+    max-width: 220px;
     width: 100%;
   }
 
@@ -450,8 +652,8 @@ body {
 
   .navMob-fixed-top {
     display: flex;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     position: fixed;
     left: 0;
     top: 0;
