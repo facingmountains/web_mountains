@@ -275,11 +275,7 @@ button input:focus{
 
 /* Watch */
 .section-watch {
-<<<<<<< HEAD
   padding-top:120px ;
-=======
-  padding-top: 120px;
->>>>>>> f2e2a1fcbfbadfed24e030b7983208cee8576376
   display: flex;
   align-items: center;
   justify-content: center;
