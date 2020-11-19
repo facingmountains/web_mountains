@@ -185,7 +185,7 @@ cursor: pointer;
 }
 
 
-#embed_signup{
+.formkit-form{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,15 +198,16 @@ cursor: pointer;
   padding-bottom:100px;
 }
 
-form  h3{
+form h3{
   text-align: center;
 }
-.field-group{
+.formkit-fields{
 padding-top:20px;
 
 }
 
-.field-group input{
+.formkit-fields input,
+.formkit-submit{
   padding:10px 20px;
   margin:  7px 10px;
   border: 1px solid  white;
@@ -216,21 +217,19 @@ padding-top:20px;
   color: white;
 }
 
-.field-group input:focus{
+.formkit-fields input:focus{
   outline: none;
   box-shadow: none;
 }
-.field-group button{
+.formkit-fields button{
   background-color: transparent;
 }
 
-button input{
-  color:  white;
-}
 
-button input:active,
-button input:hover,
-button input:focus{
+
+.formkit-submit:active,
+.formkit-submit:hover,
+.formkit-submit:focus{
   border: 1px solid  rgb(223, 187, 4);
   color: rgb(223, 187, 4);
   text-decoration: none;
@@ -448,7 +447,7 @@ margin-bottom:60px;
 
   /* Section Watch */
   .watch-content {
-    max-width: 900px;
+    max-width: 980px;
   }
 
 /* Section Store */
@@ -498,7 +497,7 @@ margin-bottom:60px;
     width: 80%;
   }
 
-  #mc_embed_signup{
+  .formkit-form{
 
     padding-top:26px; 
     padding-bottom:33px;
@@ -544,6 +543,7 @@ margin-bottom:60px;
     max-height: 800px;
     margin: 0 auto;
   }
+
 
 .one_card{
   width: 80%;
